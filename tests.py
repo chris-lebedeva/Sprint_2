@@ -54,7 +54,7 @@ class TestBooksCollector:
         collector = BooksCollector()
 
         collector.add_new_book('Улисс')
-        collector.set_book_rating('Улисс', 10)
+        collector.set_book_rating('Улисс', 15)
 
         assert collector.get_book_rating('Улисс')
 
