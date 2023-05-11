@@ -45,7 +45,7 @@ class TestBooksCollector:
         collector = BooksCollector()
 
         collector.add_new_book('Му-му')
-        collector.set_book_rating('Му-му', 1)
+        collector.set_book_rating('Му-му', 0)
 
         assert collector.books_rating['Му-му'] >= 1
 
