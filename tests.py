@@ -47,7 +47,7 @@ class TestBooksCollector:
         collector.add_new_book('Му-му')
         collector.set_book_rating('Му-му', 0)
 
-        assert collector.books_rating['Му-му'] >= 1
+        assert collector.get_book_rating('Му-му')
 
     # проверяем, что рейтинг книги не может быть больше 10
     def test_set_book_rating_book_rating_no_more_than_ten(self):
