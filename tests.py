@@ -83,7 +83,7 @@ class TestBooksCollector:
         collector.add_new_book('Сто лет одиночества')
         collector.add_new_book('Учение дона Хуана')
 
-        assert collector.get_books_rating()
+        assert 'Колыбель для кошки' and 'Сто лет одиночества' and 'Учение дона Хуана' in collector.get_books_rating().keys()
 
     # проверяем, что книга добавилась в Избранное
     def test_add_book_in_favorites_true(self):
