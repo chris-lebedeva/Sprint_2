@@ -110,4 +110,4 @@ class TestBooksCollector:
         collector.add_new_book('Братья Карамазовы')
         collector.add_book_in_favorites('Братья Карамазовы')
 
-        assert collector.get_list_of_favorites_books()
+        assert 'Крутой маршрут' and 'Братья Карамазовы' in collector.get_list_of_favorites_books()
