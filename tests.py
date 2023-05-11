@@ -90,7 +90,7 @@ class TestBooksCollector:
         collector.add_new_book('Улитка на склоне')
         collector.add_book_in_favorites('Улитка на склоне')
 
-        assert collector.favorites[0]
+        assert 'Улитка на склоне' in collector.favorites
 
     # проверяем, что книга удалилась из Избранного
     def test_delete_book_from_favorites_true(self):
