@@ -38,7 +38,7 @@ class TestBooksCollector:
 
         collector.add_new_book('Илиада')
 
-        assert collector.get_book_rating('Илиада')
+        assert collector.get_book_rating('Илиада') == 1
 
     # проверяем, что рейтинг книги не может быть меньше 1
     def test_set_book_rating_book_rating_no_less_than_one(self):
