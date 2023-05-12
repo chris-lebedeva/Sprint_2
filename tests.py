@@ -56,7 +56,7 @@ class TestBooksCollector:
         collector.add_new_book('Улисс')
         collector.set_book_rating('Улисс', 15)
 
-        assert collector.get_book_rating('Улисс')
+        assert collector.get_book_rating('Улисс') == 1
 
     # проверяем, что у недобавленной книги нет рейтинга
     def test_get_book_rating_no_rating_for_not_added_book(self):
