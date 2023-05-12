@@ -72,8 +72,7 @@ class TestBooksCollector:
         collector.add_new_book('Хитроумный идальго Дон Кихот Ламанчский')
         collector.set_book_rating('Хитроумный идальго Дон Кихот Ламанчский', 8)
 
-        if 8 in collector.books_rating.values():
-            assert collector.get_books_with_specific_rating(8)
+        assert collector.get_books_with_specific_rating(8)[0] == 'Хитроумный идальго Дон Кихот Ламанчский'
 
     # проверяем, что выводится словарь books_rating
     def test_get_books_rating_return_books_rating_dictionary(self):
